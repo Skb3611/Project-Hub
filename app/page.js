@@ -28,7 +28,7 @@ const router = useRouter();
       <div className="flex flex-col min-h-screen">
         <main className="flex-1">
           <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-            <div className="container px-4 md:px-6">
+            <div className="container mx-auto px-4 md:px-6">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -52,7 +52,7 @@ const router = useRouter();
             id="features"
             className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
           >
-            <div className="container px-4 md:px-6">
+            <div className="container mx-auto px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
                 Why Choose Us
               </h2>
@@ -91,7 +91,7 @@ const router = useRouter();
             </div>
           </section>
           <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+            <div className="container mx-auto px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
                 More About Us
               </h2>
@@ -157,7 +157,7 @@ const router = useRouter();
             id="service"
             className="w-full py-12 md:py-24 lg:py-32 bg-background"
           >
-            <div className="container px-4 md:px-6">
+            <div className="container mx-auto px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
                 Our Service
               </h2>
@@ -249,7 +249,7 @@ const router = useRouter();
             </div>
           </section>
           <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+            <div className="container mx-auto px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center gap-10">
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -260,7 +260,7 @@ const router = useRouter();
                     make your academic journey a success!
                   </p>
                 </div>
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                   <div className="grid gap-16 sm:grid-cols-3 items-center justify-center min-w-3xl mx-auto">
                     <div className="flex flex-col items-center space-y-2 text-center">
                       <Mail className="h-10 w-10 mb-2 text-primary" />
