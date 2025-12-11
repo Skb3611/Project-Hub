@@ -11,7 +11,7 @@ const hero = () => {
   return (
     <div className="space-y-4 md:space-y-6 mt-30 md:mt-40" id="home">
       <h1 className="text-3xl sm:text-4xl lg:text-7xl  font-semibold text-center font-geist-sans">
-        Affordable Real-World Projects for Businesses & Students{" "}
+        Affordable Real-World Websites for Businesses & Students{" "}
       </h1>
       <AnimatedShinyText className="text-sm md:text-lg font-medium text-center block sm:max-w-[70%] font-geist-mono">
         We build ready-to-use academic and professional projects for students,
