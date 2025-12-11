@@ -5,8 +5,9 @@ import Audience from "@/components/audience";
 import { Services } from "@/components/services";
 import { WhyChooseUsSection } from "@/components/why-choose-us";
 import { ContactSection } from "@/components/contact";
-import CTA from "@/components/final-cta";
+import CTA from "@/components/final-cta"
 import Footer from "@/components/footer";
+import  Navbar  from "@/components/navbar";
 
 export default function Home() {
   return (
@@ -14,8 +15,8 @@ export default function Home() {
       {/* <Spotlight /> */}
       <BG />
       <main className="max-w-6xl mx-auto relative z-50">
+        <Navbar/>
         <Hero />
-
         <Stats />
         <Audience />
         <Services />

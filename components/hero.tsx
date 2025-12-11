@@ -1,10 +1,12 @@
+"use client"
 import { AnimatedShinyText } from "./ui/animated-shiny-text";
 import { Button } from "./ui/button";
 import { AvatarCircles } from "./ui/avatar-circles";
+import { scrollToSection } from "./navbar";
 
 const hero = () => {
   return (
-    <div className="space-y-6 mt-40">
+    <div className="space-y-6 mt-40" id="home">
       <h1 className="text-7xl  font-semibold text-center font-geist-sans">
         Affordable Real-World Projects for Businesses & Students{" "}
       </h1>
@@ -13,7 +15,11 @@ const hero = () => {
         startups, and small businesses—at prices everyone can afford.
       </AnimatedShinyText>
       <div className="w-full flex justify-center gap-2 font-geist-mono ">
-        <Button className="text-md" size={"lg"}>
+        <Button
+          className="text-md cursor-pointer"
+          size={"lg"}
+          onClick={() => scrollToSection("contact")}
+        >
           Get Started
         </Button>
       </div>

@@ -17,7 +17,7 @@ import IconWrapper from "./ui/icon-wrapper";
 
 const audience = () => {
   return (
-    <div className="my-20 max-w-5xl mx-auto">
+    <div className="py-20 max-w-5xl mx-auto" id="about">
       <div className="space-y-3 mb-20">
         <IconWrapper size="md" cyan>
           <Rocket />

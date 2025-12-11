@@ -1,7 +1,9 @@
+"use client"
 import React, { SVGProps } from "react";
 import { AnimatedShinyText } from "./ui/animated-shiny-text";
 import { PulsatingButton } from "./ui/pulsating-button";
 import { Button } from "./ui/button";
+import { scrollToSection } from "./navbar";
 
 const CTA = () => {
   return (
@@ -62,18 +64,12 @@ const CTA = () => {
           </div>
         </div>
       </div>
-      {/* <div className="size-25 absolute top-0 left-1/4 rounded-full bg-blue-200"></div>
-      <div className="size-25 absolute top-0 left-1/2 rounded-full bg-blue-200"></div>
-      <div className="size-25 absolute top-0 right-1/4 rounded-full bg-blue-200"></div>
-      <div className="size-25 absolute bottom-0 left-0 rounded-full bg-blue-200"></div>
-      <div className="size-25 absolute bottom-0 left-1/2 rounded-full bg-blue-200"></div>
-      <div className="size-25 absolute bottom-0 left-[90%] rounded-full bg-blue-200"></div> */}
       <h2 className="text-5xl font-geist-sans">Ready to Build Your Project?</h2>
       <AnimatedShinyText className="font-geist-mono text-center">
         Join 100+ students and startups who have already transformed their ideas
         into reality.
       </AnimatedShinyText>
-      <Button>Get Started</Button>
+      <Button className="cursor-pointer" size={"lg"} onClick={() => scrollToSection("contact")}>Get Started</Button>
     </div>
   );
 };
