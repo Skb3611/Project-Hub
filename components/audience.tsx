@@ -17,20 +17,20 @@ import IconWrapper from "./ui/icon-wrapper";
 
 const audience = () => {
   return (
-    <div className="py-20 max-w-5xl mx-auto" id="about">
+    <div className=" py-10 md:py-20 max-w-5xl mx-auto h-full" id="about">
       <div className="space-y-3 mb-20">
         <IconWrapper size="md" cyan>
           <Rocket />
         </IconWrapper>
-        <h2 className="text-4xl font-bold text-center font-geist-sans">
+        <h2 className="text-2xl md:text-4xl font-bold text-center font-geist-sans">
           Built For EveryOne
         </h2>
-        <AnimatedShinyText className="font-geist-mono text-center block max-w-[70%] ">
+        <AnimatedShinyText className="font-geist-mono text-center block sm:max-w-[70%] text-sm md:text-base ">
           Whether you're a student looking for your final year project or a
           startup building your MVP, we've got you covered.
         </AnimatedShinyText>
       </div>
-      <div className="grid grid-cols-2 max-w-4xl  gap-5 mx-auto h-120">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl  gap-5 mx-auto h-full">
         {CONTENT.map((item) => {
           return (
             <div
@@ -39,16 +39,16 @@ const audience = () => {
             >
               <div className="w-full h-full rounded-lg shadow-xl bg-black flex flex-col gap-2 items-start p-4">
                 <IconWrapper size="md">{<item.Icon />}</IconWrapper>
-                <h2 className="text-2xl font-semibold font-geist-sans">
+                <h2 className="text-lg md:text-2xl font-semibold font-geist-sans">
                   {item.heading}
                 </h2>
-                <AnimatedShinyText className="font-geist-mono">
+                <AnimatedShinyText className="font-geist-mono text-sm md:text-base">
                   {item.sub_heading}
                 </AnimatedShinyText>
                 <ul className="mt-5 space-y-1.5">
                   {item.points.map((pt) => {
                     return (
-                      <li key={pt.text} className="flex items-center gap-2">
+                      <li key={pt.text} className="flex items-center gap-2 text-sm md:text-base">
                         <IconWrapper perspective={false} size="xs">
                           <pt.Icon className="size-4" />
                         </IconWrapper>

@@ -78,7 +78,7 @@ const clientServices = [
 
 export const Services = () => {
   return (
-    <section className="py-20" id="services">
+    <section className="py-10 md:py-20" id="services">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -90,10 +90,10 @@ export const Services = () => {
           <IconWrapper size="md" cyan>
             <Wrench />
           </IconWrapper>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Our <span className="font-geist-sans">Services</span>
+          <h2 className="text-2xl md:text-4xl font-bold font-geist-sans">
+            Our Services
           </h2>
-          <AnimatedShinyText className="font-geist-mono text-center block max-w-[60%]">
+          <AnimatedShinyText className="font-geist-mono text-center block sm:max-w-[60%] text-sm md:text-base">
             From academic projects to production-ready software, we deliver
             quality at every level.
           </AnimatedShinyText>
@@ -107,7 +107,7 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl font-bold text-primary mb-8 flex items-center gap-2"
+              className="text-lg sm:text-xl font-bold text-primary mb-4 sm:mb-8 flex items-center gap-2"
             >
               <span className="w-8 h-1 bg-primary rounded-full" />
               Student Projects
@@ -144,7 +144,7 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl font-bold  mb-8 flex items-center gap-2"
+              className="text-lg sm:text-xl font-bold  mb-4 sm:mb-8 flex items-center gap-2"
             >
               <span className="w-8 h-1 bg-white rounded-full" />
               Client Services

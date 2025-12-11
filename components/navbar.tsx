@@ -106,7 +106,7 @@ const Navbar = () => {
   });
   return (
     <div>
-      <header className=" fixed top-2 w-full z-50 mx-auto max-w-6xl font-geist-mono">
+      <header className=" fixed top-2 w-full z-50 mx-auto max-w-6xl font-geist-mono left-1/2 transform -translate-x-1/2" >
         <motion.div
           initial={{
             maxWidth: isMobile ? "100%" : "72rem",
@@ -134,21 +134,13 @@ const Navbar = () => {
               alt="logo"
               className="invert"
             />
-            <span className="text-xl font- text-white bg-clip-text">
+            <span className="text-xl font-geist-sans text-white bg-clip-text">
               Project Hub
             </span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             {navItems}
           </nav>
-          <Button
-            className="cursor-pointer"
-            onClick={() => {
-              scrollToSection("contact");
-            }}
-          >
-            Contact Us
-          </Button>
           <div className="md:hidden flex justify-center items-center gap-2 relative">
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
@@ -157,17 +149,23 @@ const Navbar = () => {
               <SheetContent>
                 <SheetHeader>
                   <SheetTitle>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                        <Code className="w-5 h-5 text-black" />
-                      </div>
-                      <span className="text-xl font- text-white bg-clip-text">
-                        GitFolio
+                    <div className="flex items-center">
+                      <Image
+                        src={"/logo.png"}
+                        width={40}
+                        height={60}
+                        alt="logo"
+                        className="invert"
+                      />
+                      <span className="text-xl font-geist-sans text-white bg-clip-text">
+                        Project Hub
                       </span>
                     </div>
                   </SheetTitle>
                   <SheetDescription>
-                    <AnimatedShinyText>Navigation Menu</AnimatedShinyText>
+                    <AnimatedShinyText className="font-geist-mono">
+                      Navigation Menu
+                    </AnimatedShinyText>
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex flex-col gap-1 justify-center items-center">

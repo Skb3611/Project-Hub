@@ -22,7 +22,7 @@ export const AvatarCircles = ({
       {avatarUrls.map((url, index) => (
         <img
           key={index}
-          className="size-12 rounded-full border-2 border-white dark:border-gray-800"
+          className="size-10 sm:size-12 rounded-full border-2 border-white dark:border-gray-800"
           src={url.imageUrl}
           width={40}
           height={40}

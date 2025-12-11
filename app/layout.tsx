@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Roboto } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,10 +12,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "Project Hub",
   description: "Affordable Real-World Projects for Businesses & Students",
+  openGraph: {
+    title: "Project Hub",
+    description: "Affordable Real-World Projects for Businesses & Students",
+    images: ["/og.png"],
+  },
+  twitter: {
+    title: "Project Hub",
+    description: "Affordable Real-World Projects for Businesses & Students",
+    images: ["/og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

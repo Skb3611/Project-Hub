@@ -11,11 +11,11 @@ import  Navbar  from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full rounded-md  bg-black/96 antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="min-h-screen w-full rounded-md  bg-black/96 antialiased bg-grid-white/[0.02] relative overflow-hidden mx-auto">
       {/* <Spotlight /> */}
       <BG />
-      <main className="max-w-6xl mx-auto relative z-50">
         <Navbar/>
+      <main className="max-w-6xl mx-auto relative z-20 px-5">
         <Hero />
         <Stats />
         <Audience />

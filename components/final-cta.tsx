@@ -7,65 +7,65 @@ import { scrollToSection } from "./navbar";
 
 const CTA = () => {
   return (
-    <div className=" relative flex flex-col justify-center items-center space-y-5 py-48 px-4 my-10">
+    <div className=" relative flex flex-col justify-center items-center space-y-5 py-24 md:py-48 px-4 my-10">
       <div className="w-full h-full">
         <div className="absolute top-0 left-1/4 transform -translate-x-1/2 p-4 -rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.nextjs className="size-20" />}
+              {<svgs.nextjs className="size-15 md:size-20" />}
             </span>
           </div>
         </div>
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 p-4 rotate-z-20">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.tailwind className="size-15" />}
+              {<svgs.tailwind className="size-10 md:size-12 lg:size-15" />}
             </span>
           </div>
         </div>
         <div className="absolute top-0 right-1/4 transform translate-x-1/2 p-4 rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
-            <span className="text-xl">{<svgs.node className="size-15" />}</span>
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+            <span className="text-xl">{<svgs.node className="size-10 md:size-12 lg:size-15" />}</span>
           </div>
         </div>
-        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 p-4 -rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 p-4 -rotate-z-25 hidden lg:block">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.prisma className="size-15" />}
+              {<svgs.prisma className="size-10 md:size-12 lg:size-15" />}
             </span>
           </div>
         </div>
-        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 p-4 rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 p-4 rotate-z-25 hidden lg:block">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.mongo className="size-15" />}
+              {<svgs.mongo className="size-10 md:size-12 lg:size-15" />}
             </span>
           </div>
         </div>
         <div className="absolute bottom-0 left-1/4 transform -translate-x-1/2 p-4 -rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.cloud className="size-15" />}
+              {<svgs.cloud className="size-10 md:size-12 lg:size-15" />}
             </span>
           </div>
         </div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-4 rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.python className="size-15" />}
+              {<svgs.python className="size-10 md:size-12 lg:size-15" />}
             </span>
           </div>
         </div>
         <div className="absolute bottom-0 right-1/4 transform translate-x-1/2 p-4 rotate-z-25">
-          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
+          <div className="flex shadow-lg h-12 w-12 md:h-24 md:w-24 animate-float items-center justify-center rounded-full bg-linear-180 from-[#ECECEC] from-5.38% to-white to-100.77% p-8 lg:p-10 drop-shadow-[0px_30px_10px_rgba(224,224,224,0.02)]">
             <span className="text-xl">
-              {<svgs.react className="size-15" />}
+              {<svgs.react className="size-10 md:size-12 lg:size-15" />}
             </span>
           </div>
         </div>
       </div>
-      <h2 className="text-5xl font-geist-sans">Ready to Build Your Project?</h2>
-      <AnimatedShinyText className="font-geist-mono text-center">
+      <h2 className="text-3xl md:text-5xl font-geist-sans text-center">Ready to Build Your Project?</h2>
+      <AnimatedShinyText className="font-geist-mono text-center text-sm sm:text-base">
         Join 100+ students and startups who have already transformed their ideas
         into reality.
       </AnimatedShinyText>

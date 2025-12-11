@@ -5,7 +5,7 @@ import { CountingNumber } from "./animate-ui/primitives/texts/counting-number";
 import IconWrapper from "./ui/icon-wrapper";
 const stats = () => {
   return (
-    <div className="grid grid-cols-4 gap-5 my-30 max-w-5xl mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-5 my-20 md:my-30 max-w-5xl mx-auto">
       {STATS.map(({ heading, subheading }) => (
         <Card key={subheading} heading={heading} subheading={subheading} />
       ))}
@@ -35,7 +35,7 @@ const Card = ({
           </IconWrapper>
         )}
       </div>
-      <AnimatedShinyText className="text-sm text-gray-500 font-geist-mono">
+      <AnimatedShinyText className="text-sm text-gray-500 font-geist-mono text-center">
         {subheading}
       </AnimatedShinyText>
     </div>

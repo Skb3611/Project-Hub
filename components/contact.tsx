@@ -6,7 +6,7 @@ import { AnimatedShinyText } from "./ui/animated-shiny-text";
 
 export const ContactSection = () => {
   return (
-    <section className="py-20" id="contact">
+    <section className="py-10 md:py-20" id="contact">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,10 +18,10 @@ export const ContactSection = () => {
           <IconWrapper size="md" cyan>
             <Phone />
           </IconWrapper>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Get In <span className="text-primary font-geist-sans">Touch</span>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground font-geist-sans">
+            Get In Touch
           </h2>
-          <AnimatedShinyText className="font-geist-mono text-center block max-w-[60%]">
+          <AnimatedShinyText className="font-geist-mono text-center block sm:max-w-[60%] text-sm sm:text-base">
             Have a question or want to discuss your project? We'd love to hear
             from you.
           </AnimatedShinyText>

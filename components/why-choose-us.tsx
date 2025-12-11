@@ -47,7 +47,7 @@ const features = [
 
 export const WhyChooseUsSection = () => {
   return (
-    <section className="py-20" id="why-us">
+    <section className="py-10 md:py-20" id="why-us">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,17 +59,17 @@ export const WhyChooseUsSection = () => {
           <IconWrapper size="md" cyan>
             <ShieldQuestionMark className="size-8" />
           </IconWrapper>
-          <h2 className="text-3xl md:text-4xl font-bold ">
-            Why Choose{" "}
-            <span className="text-gradient font-geist-sans">Project Hub?</span>
+          <h2 className="text-2xl md:text-4xl font-bold font-geist-sans ">
+            Why Choose
+            Us?
           </h2>
-          <AnimatedShinyText className="font-geist-mono text-center block max-w-[60%]">
+          <AnimatedShinyText className="font-geist-mono text-center block sm:max-w-[60%] text-sm sm:text-base">
             We're not just another project seller. We're your partner in
             success.
           </AnimatedShinyText>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 max-w-5xl mx-auto">
           {features.map((feature, index) => (
             <motion.div
               key={index}
