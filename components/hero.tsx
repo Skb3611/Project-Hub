@@ -4,10 +4,12 @@ import { Button } from "./ui/button";
 import { AvatarCircles } from "./ui/avatar-circles";
 import { scrollToSection } from "./navbar";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useRouter } from "next/navigation";
 
 
 const hero = () => {
   const ismobile = useIsMobile()
+  const router = useRouter()
   return (
     <div className="space-y-4 md:space-y-6 mt-30 md:mt-40" id="home">
       <h1 className="text-3xl sm:text-4xl lg:text-7xl  font-semibold text-center font-geist-sans">
@@ -24,6 +26,13 @@ const hero = () => {
           onClick={() => scrollToSection("contact")}
         >
           Get Started
+        </Button>
+        <Button
+          className="sm:text-md cursor-pointer"
+          size={ismobile ? "default" : "lg"}
+          onClick={() => router.push("/experience")}
+        >
+          Experience
         </Button>
       </div>
       <div className="w-full flex justify-center items-center gap-2 flex-col mt-25">

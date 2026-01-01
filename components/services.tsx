@@ -88,7 +88,7 @@ export const Services = () => {
           className="text-center mb-16 space-y-3"
         >
           <IconWrapper size="md" cyan>
-            <Wrench />
+            <Wrench/>
           </IconWrapper>
           <h2 className="text-2xl md:text-4xl font-bold font-geist-sans">
             Our Services
