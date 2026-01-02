@@ -27,7 +27,7 @@ export const Card = React.memo(
         onMouseLeave={() => setHovered(null)}
         onClick={handleClick}
         className={cn(
-          "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden aspect-video w-full transition-all duration-300 ease-out",
+          "rounded-lg relative z-20 bg-gray-100 dark:bg-neutral-900 overflow-hidden aspect-video w-full transition-all duration-300 ease-out",
           hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
           card.url && "cursor-pointer"
         )}

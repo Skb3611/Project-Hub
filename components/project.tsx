@@ -25,7 +25,7 @@ export default function FocusCardDemo() {
     },
     {
       title: "LaunchIdea",
-      src: "./launchidea.png",
+      src: "./LaunchIdea.png",
       description: "Turn your concept into a live, interactive product within weeks using AI-powered development.",
       url: "https://www.launchidea.today/"
     },
